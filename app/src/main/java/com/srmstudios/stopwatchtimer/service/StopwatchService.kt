@@ -27,7 +27,7 @@ class StopwatchService: LifecycleService() {
 
     override fun onCreate() {
         super.onCreate()
-        setupViews()
+        setupNotification()
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -81,7 +81,7 @@ class StopwatchService: LifecycleService() {
         lifecycleScope.coroutineContext.cancelChildren()
     }
 
-    private fun setupViews(){
+    private fun setupNotification(){
         notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
         _elapsedSeconds.observe(this){ elapsedSeconds ->
