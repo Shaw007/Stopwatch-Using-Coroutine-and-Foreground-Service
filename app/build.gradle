@@ -3,12 +3,10 @@ plugins {
     id 'kotlin-android'
     id 'androidx.navigation.safeargs.kotlin'
     id 'kotlin-kapt'
-    id 'dagger.hilt.android.plugin'
 }
 
 android {
     compileSdkVersion rootProject.compile_sdk_version
-    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.srmstudios.stopwatchtimer"
@@ -64,10 +62,6 @@ dependencies {
 
     // Fragment ktx
     implementation "androidx.fragment:fragment-ktx:$fragment_ktx_version"
-
-    // Hilt
-    implementation "com.google.dagger:hilt-android:$hilt_version"
-    kapt "com.google.dagger:hilt-compiler:$hilt_version"
 
     // Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"

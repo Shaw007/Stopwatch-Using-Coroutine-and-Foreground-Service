@@ -7,6 +7,6 @@
     <fragment
         android:id="@+id/stopwatchFragment"
         android:name="com.srmstudios.stopwatchtimer.ui.stopwatch.StopwatchFragment"
-        android:label="fragment_stopwatch"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_stopwatch" />
 </navigation>
