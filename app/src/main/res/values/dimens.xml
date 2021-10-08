@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="txt_stopwatch_time_size">48sp</dimen>
+    <dimen name="btn_txt_size_normal">16sp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+</resources>
